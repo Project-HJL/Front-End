@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@200;300;400;500;600;700&family=Krub:wght@200;300;400;500;600;700&display=swap');
+
+:root{
+    --color-white: rgb(242, 242, 242);
+    --color-black: rgb(34, 34, 34);
+    --color-blue: rgb(26, 119, 188);
+    --color-gray: rgb(217, 217, 217);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Krub", sans-serif;
+    letter-spacing: 1px;
+}
+
+body{
+    background-color: var(--color-black);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: var(--color-white);
+    border-radius: .8rem;
+    margin: .8rem;
+    max-width: 37.5rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.header{
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.form{
+    padding: 1rem;
+}
+
+.form-content{
+    margin-bottom: 1.2rem;
+    padding-bottom: 1.12rem;
+    position: relative;
+}
+
+.form-content label{
+    display: inline-block;
+    margin-bottom: 0.25rem;
+}
+
+.form-content input{
+    display: block;
+    width: 100%;
+    border-radius: .5rem;
+    padding: .5rem;
+    border: .12rem solid var(--color-gray);
+}
+
+.form-content a{
+    position: absolute;
+    bottom: -.5rem;
+    left: 0;
+    visibility: hidden;
+}
+
+.form button{
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    width: 100%;
+    border-radius: .8rem;
+    padding: .5rem;
+    border: 0;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.form-content.error input{
+    border-color: rgb(168, 0, 0);
+}
+
+.form-content.error a{
+    color: rgb(168, 0, 0);
+    visibility: visible;
+}
