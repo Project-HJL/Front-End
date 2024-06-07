@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OceanData</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styleD.css">
+</head>
+<body>
+    <header id="header">
+
+        <div class="banner-image">
+            <div class="container">
+                <div class="nav-bar" id="nav" class="rolagem">
+
+                    <a href="../index.html" class="logo-link">
+                        <div class="logo">
+                            OCEAN <div class="data">DATA</div>
+                        </div>
+                    </a>
+
+                    <div class="options">
+                        <a href="../index.html" class="item-navbar">HOME</a>
+                        <a href="/pages/page_blog.html" class="item-navbar">BLOG</a>
+                        <a href="/pages/page_denuncie.html" class="item-navbar">DENUNCIE</a>
+                        <a href="/pages/page_apoie.html" class="item-navbar">APOIE</a>
+                        <a href="/pages/page_sobre.html" class="item-navbar">SOBRE</a>
+                    </div>
+
+                    <div class="mobile-menu-icon">
+                        <button onclick="menuShow()"><img class="hamb" src="../images/hamburger.png" alt="" width="32px"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mobile-menu">
+                <a href="../index.html" class="item-navbar">HOME</a>
+                <a href="/pages/page_blog.html" class="item-navbar">BLOG</a>
+                <a href="/pages/page_denuncie.html" class="item-navbar">DENUNCIE</a>
+                <a href="/pages/page_apoie.html" class="item-navbar">APOIE</a>
+                <a href="/pages/page_sobre.html" class="item-navbar">SOBRE</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="quest">
+            <div class="campo">
+                <label for="nome">Nome:</label>
+                <input type="text" name="Nome" id="nome" required>
+            </div>
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="email">Email:</label>
+                    <input type="email" name="Email" id="email" required>
+                </div>
+                <div class="campo">
+                    <label for="numero">Número:</label>
+                    <input type="text" name="Número" id="num" required>
+                </div>
+            </fieldset>
+            <div class="campo">
+                <label for="estado">Estado</label>
+                <select name="estado" id="estado">
+                    <option selected disabled value="">Escolha seu Estado</option>
+                    <option>Acre - AC</option>
+                    <option>Alagoas - AL</option>
+                    <option>Amapá - AP</option>
+                    <option>Amazonas - AM</option>
+                    <option>Bahia - BA</option>
+                    <option>Ceará - CE</option>
+                    <option>Distrito Federal - DF</option>
+                    <option>Espírito Santo - ES</option>
+                    <option>Goiás - GO</option>
+                    <option>Maranhão - MA</option>
+                    <option>Mato Grosso - MT</option>
+                    <option>Mato Grosso do Sul - MS</option>
+                    <option>Minas Gerais - MG</option>
+                    <option>Pará - PA</option>
+                    <option>Paraíba - PB</option>
+                    <option>Paraná - PR</option>
+                    <option>Pernambuco - PE</option>
+                    <option>Piauí - PI</option>
+                    <option>Rio de Janeiro - RJ</option>
+                    <option>Rio Grande do Norte - RN</option>
+                    <option>Rio Grande do Sul - RS</option>
+                    <option>Rondônia - RO</option>
+                    <option>Roraima - RR</option>
+                    <option>Santa Catarina - SC</option>
+                    <option>São Paulo - SP</option>
+                    <option>Sergipe - SE</option>
+                    <option>Tocantins - TO</option>
+                </select>
+            </div>
+            <div class="campo">
+                <br>
+                <label for="experiencia">Relate o ocorrido e/ou denuncie um problema: </label>
+            </div>
+            
+            <div class="caixa">
+                <textarea id="experiencia" name="experiencia"></textarea>
+            </div>
+
+
+            <div class="botao1">
+                <button type="submit" class="botao">Concluir</button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div id="footer_content">
+            
+            <ul class="footer-list">
+                <li>
+                    <h3>Contato</h3>
+                </li>
+                <li>
+                    Email: Oceandata@gmail.com
+                </li>
+                <li>
+                    Phone:+55 11 98765-4321
+                </li>
+                <li>
+                    Endereço: Av. Lins de Vasconcelos, 1222 - Aclimação, São Paulo - SP, 01538-001
+                </li>
+            </ul>
+
+            <ul class="footer-list" id="footer-list-2">
+                <li>
+                    <h3>Links Rápidos</h3>
+                </li>
+                <li>
+                    <a href="../index.html" class="footer-link">Home</a>
+                </li>
+                <li>
+                    <a href="/pages/page_blog.html" class="footer-link">Blog</a>
+                </li>
+                <li>
+                    <a href="/pages/page_denuncie.html" class="footer-link">Denuncie</a>
+                </li>
+                <li>
+                    <a href="/pages/page_apoie.html" class="footer-link">Apoie</a>
+                </li>
+                <li>
+                    <a href="/pages/page_sobre.html" class="footer-link">Sobre</a>
+                </li>
+            </ul>   
+
+            <div id="footer_social">
+                <h1>Siga-nos</h1>
+    
+                <div id="footer_social_media">
+                    <a href="https://www.instagram.com/orion_developers/" class="footer-link" id="instagram" target="_blank">
+                        <img src="../images/instagram.png" alt="logo_instagram" width="50px">
+                    </a>
+
+                    <a href="https://www.youtube.com/channel/UCJ5gFvOlS2vH4qVglfIOHxQ" class="footer-link" id="youtube" target="_blank">
+                        <img src="../images/play.png" alt="logo_youtube" width="50px">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_copyright">
+            &#169
+            2024 all rights reserved | Ocean Data
+        </div>
+    </footer>
+
+    <script src="../js/menu.js"></script>
+    <script src="../js/hamb.js"></script>
+</body>
+</html>
